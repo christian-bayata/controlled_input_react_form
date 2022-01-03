@@ -25,6 +25,7 @@ body {
 }
 
 .form-group label {
+  width: 100px;
   padding-right: 2rem;
   font-family: sans-serif;
 }
@@ -46,7 +47,7 @@ body {
   color: white;
   font-family: sans-serif;
   display: block;
-  margin-left: 5rem;
+  margin-left: 7rem;
 }
 
 .btn:hover {

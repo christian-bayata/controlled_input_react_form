@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 const ControlledInputs = () => {
     const [firstName, setFirstName] = useState('');
     const [email, setEmail] = useState('');
+    const [age, setAge] = useState('')
     const [people, setPeople] = useState([]);
 
     const handleSubmit = (e) => {
@@ -41,6 +42,16 @@ const ControlledInputs = () => {
                         name="email" 
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
+                    />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="age">Age: </label>
+                    <input 
+                        type="text" 
+                        id="age" 
+                        name="age" 
+                        value={age}
+                        onChange={(e) => setAge(e.target.value)}
                     />
                 </div>
                 <button className="btn">Add Person</button>
